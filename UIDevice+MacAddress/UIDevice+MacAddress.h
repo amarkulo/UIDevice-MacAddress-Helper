@@ -5,7 +5,7 @@
 //  Copyright (c) 2012 iRget Solutions. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface UIDevice (MacAddress)
 
