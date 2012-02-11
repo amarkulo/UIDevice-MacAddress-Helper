@@ -10,5 +10,6 @@
 @interface UIDevice (MacAddress)
 
 - (NSString *) macAddress:(NSString *)delimiter;
+- (NSString *)uniqueDeviceIdentifier; 
 
 @end

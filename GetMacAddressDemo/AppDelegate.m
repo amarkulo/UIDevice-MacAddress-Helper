@@ -27,6 +27,7 @@
     [self.window makeKeyAndVisible];
     
     NSLog(@"Device wlan mac address: %@", [[UIDevice currentDevice] macAddress:@"-"]);
+    NSLog(@"Device UDID: %@", [[UIDevice currentDevice] uniqueDeviceIdentifier]);
     
     return YES;
 }
