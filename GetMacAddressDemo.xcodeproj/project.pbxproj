@@ -1,0 +1,276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09F094E414E6C8190014E0B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F094E314E6C8190014E0B4 /* UIKit.framework */; };
+		09F094E614E6C8190014E0B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F094E514E6C8190014E0B4 /* Foundation.framework */; };
+		09F094E814E6C8190014E0B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F094E714E6C8190014E0B4 /* CoreGraphics.framework */; };
+		09F094EE14E6C8190014E0B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09F094EC14E6C8190014E0B4 /* InfoPlist.strings */; };
+		09F094F014E6C8190014E0B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F094EF14E6C8190014E0B4 /* main.m */; };
+		09F094F414E6C8190014E0B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F094F314E6C8190014E0B4 /* AppDelegate.m */; };
+		09F094FD14E6C85D0014E0B4 /* UIDevice+MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F094FC14E6C85D0014E0B4 /* UIDevice+MacAddress.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09F094DF14E6C8190014E0B4 /* GetMacAddressDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetMacAddressDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F094E314E6C8190014E0B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09F094E514E6C8190014E0B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09F094E714E6C8190014E0B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		09F094EB14E6C8190014E0B4 /* GetMacAddressDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GetMacAddressDemo-Info.plist"; sourceTree = "<group>"; };
+		09F094ED14E6C8190014E0B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09F094EF14E6C8190014E0B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09F094F114E6C8190014E0B4 /* GetMacAddressDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GetMacAddressDemo-Prefix.pch"; sourceTree = "<group>"; };
+		09F094F214E6C8190014E0B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09F094F314E6C8190014E0B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09F094FB14E6C85D0014E0B4 /* UIDevice+MacAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+MacAddress.h"; sourceTree = "<group>"; };
+		09F094FC14E6C85D0014E0B4 /* UIDevice+MacAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+MacAddress.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09F094DC14E6C8190014E0B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F094E414E6C8190014E0B4 /* UIKit.framework in Frameworks */,
+				09F094E614E6C8190014E0B4 /* Foundation.framework in Frameworks */,
+				09F094E814E6C8190014E0B4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09F094D414E6C8190014E0B4 = {
+			isa = PBXGroup;
+			children = (
+				09F094FA14E6C8230014E0B4 /* UIDevice+MacAddress */,
+				09F094E914E6C8190014E0B4 /* GetMacAddressDemo */,
+				09F094E214E6C8190014E0B4 /* Frameworks */,
+				09F094E014E6C8190014E0B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09F094E014E6C8190014E0B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09F094DF14E6C8190014E0B4 /* GetMacAddressDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09F094E214E6C8190014E0B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09F094E314E6C8190014E0B4 /* UIKit.framework */,
+				09F094E514E6C8190014E0B4 /* Foundation.framework */,
+				09F094E714E6C8190014E0B4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09F094E914E6C8190014E0B4 /* GetMacAddressDemo */ = {
+			isa = PBXGroup;
+			children = (
+				09F094F214E6C8190014E0B4 /* AppDelegate.h */,
+				09F094F314E6C8190014E0B4 /* AppDelegate.m */,
+				09F094EA14E6C8190014E0B4 /* Supporting Files */,
+			);
+			path = GetMacAddressDemo;
+			sourceTree = "<group>";
+		};
+		09F094EA14E6C8190014E0B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09F094EB14E6C8190014E0B4 /* GetMacAddressDemo-Info.plist */,
+				09F094EC14E6C8190014E0B4 /* InfoPlist.strings */,
+				09F094EF14E6C8190014E0B4 /* main.m */,
+				09F094F114E6C8190014E0B4 /* GetMacAddressDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09F094FA14E6C8230014E0B4 /* UIDevice+MacAddress */ = {
+			isa = PBXGroup;
+			children = (
+				09F094FB14E6C85D0014E0B4 /* UIDevice+MacAddress.h */,
+				09F094FC14E6C85D0014E0B4 /* UIDevice+MacAddress.m */,
+			);
+			path = "UIDevice+MacAddress";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09F094DE14E6C8190014E0B4 /* GetMacAddressDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F094F714E6C8190014E0B4 /* Build configuration list for PBXNativeTarget "GetMacAddressDemo" */;
+			buildPhases = (
+				09F094DB14E6C8190014E0B4 /* Sources */,
+				09F094DC14E6C8190014E0B4 /* Frameworks */,
+				09F094DD14E6C8190014E0B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GetMacAddressDemo;
+			productName = GetMacAddressDemo;
+			productReference = 09F094DF14E6C8190014E0B4 /* GetMacAddressDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09F094D614E6C8190014E0B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "iRget Solutions";
+			};
+			buildConfigurationList = 09F094D914E6C8190014E0B4 /* Build configuration list for PBXProject "GetMacAddressDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09F094D414E6C8190014E0B4;
+			productRefGroup = 09F094E014E6C8190014E0B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09F094DE14E6C8190014E0B4 /* GetMacAddressDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09F094DD14E6C8190014E0B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F094EE14E6C8190014E0B4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09F094DB14E6C8190014E0B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F094F014E6C8190014E0B4 /* main.m in Sources */,
+				09F094F414E6C8190014E0B4 /* AppDelegate.m in Sources */,
+				09F094FD14E6C85D0014E0B4 /* UIDevice+MacAddress.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09F094EC14E6C8190014E0B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09F094ED14E6C8190014E0B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09F094F514E6C8190014E0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09F094F614E6C8190014E0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09F094F814E6C8190014E0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GetMacAddressDemo/GetMacAddressDemo-Prefix.pch";
+				INFOPLIST_FILE = "GetMacAddressDemo/GetMacAddressDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09F094F914E6C8190014E0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GetMacAddressDemo/GetMacAddressDemo-Prefix.pch";
+				INFOPLIST_FILE = "GetMacAddressDemo/GetMacAddressDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09F094D914E6C8190014E0B4 /* Build configuration list for PBXProject "GetMacAddressDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F094F514E6C8190014E0B4 /* Debug */,
+				09F094F614E6C8190014E0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09F094F714E6C8190014E0B4 /* Build configuration list for PBXNativeTarget "GetMacAddressDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F094F814E6C8190014E0B4 /* Debug */,
+				09F094F914E6C8190014E0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09F094D614E6C8190014E0B4 /* Project object */;
+}
