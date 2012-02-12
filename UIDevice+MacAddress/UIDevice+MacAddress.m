@@ -55,16 +55,17 @@
     const char *ptr = [[self macAddress:@""] UTF8String];
     
     // Create byte array of unsigned chars
-    unsigned char md5Buffer[CC_MD5_DIGEST_LENGTH];
+    unsigned char hashedChars[CC_SHA256_DIGEST_LENGTH];
+
+    // Hash pointer to hashedChars array
+    CC_SHA256(ptr, CC_SHA256_DIGEST_LENGTH, hashedChars);
     
-    // Create 16 byte MD5 hash value, store in buffer
-    CC_MD5(ptr, strlen(ptr), md5Buffer);
+    // Convert SHA256 value in the buffer to NSString of hex values
+    NSMutableString *output = [NSMutableString string];
     
-    // Convert MD5 value in the buffer to NSString of hex values
-    NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
-    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+    for(int i = 0; i < CC_SHA256_DIGEST_LENGTH; i++) {
         
-        [output appendFormat:@"%02x",md5Buffer[i]];
+        [output appendFormat:@"%02x",hashedChars[i]];
         
     } 
     
@@ -73,7 +74,11 @@
     [output insertString:@"-" atIndex:13];
     [output insertString:@"-" atIndex:18];
     [output insertString:@"-" atIndex:23];
-    
+    [output insertString:@"-" atIndex:36];
+    [output insertString:@"-" atIndex:49];
+    [output insertString:@"-" atIndex:54];
+    [output insertString:@"-" atIndex:59];
+    [output insertString:@"-" atIndex:64];
     
     return [output uppercaseString];
     
