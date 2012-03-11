@@ -17,7 +17,7 @@ This code works even if Airplane mode is on or if Wi-Fi is off.
 
 # License
 
-Use, modify, share and redistribute as you like.
+MIT license.
 
 # Help
 
